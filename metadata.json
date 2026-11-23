@@ -1,0 +1,8 @@
+{
+  "name": "L'Empreinte du Cœur — Grande Collecte Solidaire",
+  "description": "Grande Collecte Solidaire de L'Empreinte du Cœur à Grand-Lahou, les 26 et 27 décembre 2026. Participez sur WhatsApp ou faites un don sécurisé avec JEKO.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

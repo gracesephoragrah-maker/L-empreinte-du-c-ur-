@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  --paper: #FFFDF4;
+  --cream: #FFF6DA;
+  --card: #FFFFFF;
+  --ink: #2B2118;
+  --muted: #5C4B38;
+  --brown: #3B1A12;
+  --green: #1E6B30;
+  --deep: #14451F;
+  --gold: #E2AC0B;
+  --yellow: #F4C623;
+  --line: rgba(217, 164, 6, 0.5);
+  --wa: #0F7A40;
+  --red: #D93030;
+  --blue: #1E78D2;
+  --amber: #D98A00;
+  --danger: #B3261E;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--paper);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--green);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+.hero-surface {
+  background:
+    radial-gradient(520px 320px at 100% 0%, rgba(255, 214, 90, 0.4), rgba(255, 214, 90, 0)),
+    radial-gradient(420px 360px at 0% 60%, rgba(126, 178, 64, 0.22), rgba(126, 178, 64, 0)),
+    var(--cream);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
